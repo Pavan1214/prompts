@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html id="home" lang="en">
+
+<head>
+  <meta name="google-site-verification" content="google9b7bb5acb20c61ee" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>PromP - AI Image Editing Prompts | Generate Creative AI Images</title>
+  <meta
+    name="description"
+    content="Create, edit, and enhance AI image prompts instantly with PromP. Perfect for artists, designers, and AI enthusiasts. Free and easy to use!"
+  />
+  <meta
+    name="keywords"
+    content="AI image prompts, prompt editor, AI art generator, creative AI, image editing prompts, AI tools"
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="PromP" />
+  <meta name="theme-color" content="#4CAF50" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PromP - AI Image Editing Prompts" />
+  <meta
+    property="og:description"
+    content="Generate and edit AI image prompts quickly and creatively. Ideal for AI art, designers, and creators."
+  />
+  <meta property="og:image" content="https://promp-ts.vercel.app/cover.jpg" />
+  <meta property="og:url" content="https://promp-ts.vercel.app" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PromP - AI Image Editing Prompts" />
+  <meta
+    name="twitter:description"
+    content="Enhance your AI image creation with PromP’s easy-to-use prompt editor. Free and creative!"
+  />
+  <meta name="twitter:image" content="https://promp-ts.vercel.app/cover.jpg" />
+  <meta name="twitter:site" content="@YourTwitterHandle" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="#home"><i class="fa-solid fa-house"></i></a>
+    <input placeholder="Search prompts..." class="input" name="text" type="text" />
+    <i class="fa-solid fa-bars" id="menuBtn"></i>
+  </nav>
+
+  <div id="menuDropdown" class="dropdown-menu">
+    <a href="#" id="aboutBtn">About</a>
+    <a href="#" id="contactBtn">Contact</a>
+    <a href="#" id="reloadBtn">Reload</a>
+  </div>
+
+  <div class="cards-display" id="cardsDisplay">
+    <div class="loading-indicator">Loading PromP.ts...</div>
+  </div>
+
+  <div class="bottom-bar">
+    <div class="icons">
+      <i class="fa-solid fa-comments"></i>
+      <i class="fa-solid fa-share"></i>
+      <div id="aiBtn" class="icon-wrapper">
+        <img class="ai-img" src="./assets/ai2.png" alt="">
+        <h6>Create</h6>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay"></div>
+
+  <div id="aboutModal" class="modal">
+    <div class="modal-header">
+      <h2>About PromP.ts</h2>
+      <i class="fa-solid fa-xmark close-btn"></i>
+    </div>
+    <div class="modal-body">
+      <p>PromP.ts is your go-to hub for smart AI image editing prompts, helping creators enhance visuals with ease.
+        Designed for artists, designers, and enthusiasts alike, it turns simple words into stunning edits.</p>
+    </div>
+  </div>
+
+  <div id="contactModal" class="modal">
+    <div class="modal-header">
+      <h2>Contact Us</h2>
+      <i class="fa-solid fa-xmark close-btn"></i>
+    </div>
+    <div class="modal-body contact-icons">
+      <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/9912964095" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="mailto:businessmainid7799@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <div id="aiModal" class="modal">
+    <div class="modal-header">
+      <h2>AI Tools</h2>
+      <i class="fa-solid fa-xmark close-btn"></i>
+    </div>
+    <div class="modal-body">
+      <div class="ai-icons">
+        <a href="https://gemini.google.com/"><img src="./assets/g.png" alt="" /></a>
+        <a href="https://chat.openai.com/"><img src="./assets/gpt.png" alt="" /></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

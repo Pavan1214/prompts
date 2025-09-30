@@ -1,0 +1,157 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --bg-color: #ffffff;
+    --text-color-primary: #111827;
+    /* Bright green for the 'New' pill */
+    --border-color: #E5E7EB;
+    --shadow-color: rgba(0, 0, 0, 0.05);
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* --- Main Container --- */
+.card-container {
+    background-color: var(--card-bg-color);
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 100%;
+    max-width: 600px;
+    padding: 1.5rem 3rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* --- Header & Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    /* Center the nav items as per design */
+    align-items: center;
+    padding: 1rem 0;
+    position: relative;
+    /* For hamburger menu positioning */
+}
+
+.nav-logo {
+    /* Logo not visible in the design, but good for mobile */
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color-primary);
+    text-decoration: none;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.update-badge {
+    display: inline-block;
+    background-color: #F3F4F6;
+    border-radius: 99px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.new-pill {
+    background-color: rgb(244, 129, 21);
+    color: var(--text-color-primary);
+    padding: 0.2rem 0.6rem;
+    border-radius: 99px;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.hero-section>p {
+    font-size: 1.25rem;
+    color: var(--text-color-secondary);
+    max-width: 600px;
+    margin: 1rem auto 2rem auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--text-color-primary);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.choose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.choose img {
+    width: 145px;
+    border-radius: 8px;
+    box-shadow: 2px 5px 10px rgb(5, 5, 5);
+}
+
+.choose h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 2px;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #e8e8e8;
+    border-color: #ffe2e2;
+    border-style: solid;
+    border-radius: 15px;
+    color: rgb(134, 124, 124);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 450px) {
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+}
+
